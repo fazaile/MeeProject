@@ -1,15 +1,111 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Food Habits of Different Animals Main Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-<body>
-    <h1>Hello world</h1>
-    <!-- kita edit sini -->
-    <p>Saya makan nasi</p>
-    <p>Saya puasa</p>
-    <p>fazaile </p>
+<body class="w3-light-green">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="animalkingdom.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-light-green w3-text-white">
+    <img src="note.png" style="width:100%">
+    <p>NOTE</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-light-green w3-text-white">
+    <img src="video.png" style="width:100%">
+    <p>VIDEO</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-light-green w3-text-white">
+    <img src="quiz.png" style="width:100%">
+    <p>QUIZ</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">NOTE</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">VIDEO</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">QUIZ</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Note -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="note">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hello Kids!</span></h1>
+    <p>Here is some notes about food habits of animals.</p>
+    <img src="herbivor.gif" alt="herbivor" class="w3-image" width="992" height="992"><br><br><br>
+    <img src="carnivor.gif" alt="carnivor" class="w3-image" width="992" height="992"><br><br><br>
+    <img src="omnivor.gif" alt="omnivor" class="w3-image" width="992" height="992"><br><br><br>
+  </header><br><br><br><br>
+
+  <!-- video Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-black w3-center" id="about">
+    <h2 class="w3-text-white">Explanation Video</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-white">The video below shows a brief description of Food Habits of different Animals. </p>
+      <video width="900" height="500" controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+</div>
+    
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
