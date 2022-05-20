@@ -4,6 +4,17 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+const modalContainerElement=document.getElementById('modal-container')
+const closeElement=document.getElementById('close')
+
+// answerButtonsElement.addEventListener('click',()=>{
+//   modalContainerElement.classList.add('show')
+// })
+
+// closeElement.addEventListener('click',()=>{
+//   modalContainerElement.classList.remove('show')
+// })
+
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -65,9 +76,13 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
-    element.classList.add('correct')
+    element.classList.add('correct') 
+    alert("congrat")
+    
   } else {
-    element.classList.add('wrong')
+    element.classList.add('wrong') 
+    alert("Please try again")
+   
   }
 }
 
@@ -80,11 +95,12 @@ const questions = [
   {
     question: 'How many food habits class we had?',
     answers: [
-      { text: '3', correct: true },
+      { text: '3', correct: true, },
       { text: '4', correct: false },
       { text: '2', correct: false },
       { text: '1', correct: false }
     ]
+    
   },
   {
     question: 'What we call animal that eating plant-based food only?',
@@ -119,3 +135,4 @@ const questions = [
     ]
   }
 ]
+
