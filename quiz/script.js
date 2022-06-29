@@ -77,12 +77,10 @@ function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct') 
-    alert("congrat")
-    
+   
   } else {
     element.classList.add('wrong') 
-    alert("Please try again")
-   
+    
   }
 }
 
